@@ -1,0 +1,1 @@
+This repository have the exercises of the full stack open 2022 course from https://fullstackopen.com/ 

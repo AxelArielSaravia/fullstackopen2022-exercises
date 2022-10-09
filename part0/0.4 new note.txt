@@ -1,0 +1,21 @@
+title 0.4 new note
+actor user
+user->browser: the user submit the new note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+note over server:
+the server add the new note to he note database,
+and send a moved status to the browser,
+end note
+server-->browser: HTTP status 302. Location: ../notes
+note over browser:
+the browser reload the current URL
+end note
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: HTML-code
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: [{ content: string, date: string }, ...]

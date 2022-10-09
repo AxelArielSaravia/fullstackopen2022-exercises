@@ -1,0 +1,17 @@
+title 0.6 new note spa
+
+actor user
+user->browser:the user submit the new note.
+note over browser:
+browser starts executing js-code
+that add the new note to the notes js array in the client,
+and send the new note data to the server in a JSON format
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+the server add the new note to he note database
+end note
+
+
+
