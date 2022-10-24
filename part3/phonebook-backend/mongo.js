@@ -13,7 +13,7 @@ const personSchema = new mongoose.Schema({
 const Phonebook = mongoose.model("Phonebook", personSchema);
 
 const password = encodeURIComponent(process.argv[2]);
-const url = `mongodb+srv://axel:${password}@cluster0.oqdlw.mongodb.net/fullstackopen?retryWrites=true&w=majority`;
+const url = `mongodb+srv://axel:${password}@cluster0.oqdlw.mongodb.net/fullstackopen_phonebook?retryWrites=true&w=majority`;
 
 if (process.argv.length === 3) {
   mongoose.connect(url)

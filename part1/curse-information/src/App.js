@@ -39,4 +39,6 @@ const App = () => {
   )
 }
 
+const /** !Array<number>*/  data = [];
+
 export default App

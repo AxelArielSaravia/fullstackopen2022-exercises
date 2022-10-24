@@ -1,0 +1,18 @@
+POST http://localhost:3001/api/users 
+Content-Type: application/json
+
+//{
+//    "name": "Axel Ariel",
+//    "password": "34nnsaien39",
+//    "username": "axarisar"
+//}
+//{
+//    "name": "Eric Luis",
+//    "password": "plato3ssw",
+//    "username": "ericL"
+//}
+//{
+//    "name": "Facundo Llaiquel",
+//    "password": "casa902m",
+//    "username": "facundoLL"
+//}

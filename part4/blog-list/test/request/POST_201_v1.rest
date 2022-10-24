@@ -1,0 +1,9 @@
+POST http://localhost:3001/api/blogs 
+Content-Type: application/json
+
+{
+    "author": "Jeremy Wagner",
+    "likes": 24,
+    "title": "Now THAT'S What I Call Service Worker!",
+    "url": "https://alistapart.com/article/now-thats-what-i-call-service-worker/"
+}
