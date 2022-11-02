@@ -1,0 +1,17 @@
+POST http://localhost:3001/api/blogs 
+Content-Type: application/json
+
+//{
+//    "author": "Lennart Overkamp",
+//    "likes": 1,
+//    "title": "Designers, (Re)define Success First",
+//    "url": "https://alistapart.com/article/redefine-success-first/",
+//    "id": "6355c12d50a7efb57fe8be31"
+//}
+//{
+//    "author": "Jeremy Wagner",
+//    "likes": 23,
+//    "title": "Now THAT'S What I Call Service Worker!",
+//    "url": "https://alistapart.com/article/now-thats-what-i-call-service-worker/",
+//    "id": "6355c14450a7efb57fe8be34"
+//}
