@@ -1,11 +1,42 @@
 import axios from 'axios';
 
 const baseUrl = 'http://localhost:3001/persons';
-const allPersons = () => axios.get(baseUrl).then(response => response.data);
-const createPerson = newObject => axios.post(baseUrl, newObject).then(response => response.data);
-const updatePerson = (id, newObject) => axios.put(`${baseUrl}/${id}`, newObject).then(response => response.data);
-const deletePerson = (id) => axios.delete(`${baseUrl}/${id}`);
 
-const phonebookService = { allPersons, createPerson, updatePerson, deletePerson};
+function returnData(response) {
+    return response.data;
+}
 
-export default phonebookService;
+/*-
+allPersons :: () -> Promise<object>
+*/
+function allPersons() {
+    return axios.get(baseUrl).then(returnData);
+}
+
+/*-
+createPerson :: () -> Promise<object>
+*/
+function createPerson(newObject) {
+    return axios.post(baseUrl, newObject).then(returnData);
+}
+
+/*-
+updatePerson :: () -> Promise<object>
+*/
+function updatePerson(id, newObject) {
+    axios.put(`${baseUrl}/${id}`, newObject).then(returnData);
+}
+
+/*-
+deletePerson :: () -> Promise<object>
+*/
+function deletePerson(id) {
+    return axios.delete(`${baseUrl}/${id}`);
+}
+
+export default Object.freeze({
+    allPersons,
+    createPerson,
+    updatePerson,
+    deletePerson
+});

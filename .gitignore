@@ -1,7 +1,17 @@
+# practice dir
 course
+
 # dependencies
 node_modules
 
+# lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+npm-shrinkwrap.json
+bun.lockb
+
+# enviroment
 .env*
 .flaskenv*
 !.env.project
